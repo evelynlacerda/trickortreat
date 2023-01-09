@@ -9,6 +9,7 @@
   outline: none;
 
   /* FONTE PADRÃO DA PÁGINA */
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 100%;
+  color: var(--secondary-color);
 }

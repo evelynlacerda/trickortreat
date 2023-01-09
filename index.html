@@ -12,29 +12,51 @@
 
 </head>
 <body>
+
+    <!-- INÍCIO COM LINKS E LOGO -->
     <header id="top">
         <div class="up">
             <p>hello hallow</p>
             <nav class="menu">
-                <li class="linkmenu" href="about">About</li>
-                <li class="linkmenu" href="tickets">Buy Tickets</li>
-                <li class="linkmenu" href="contact">Support</li>
-            </nav>
+                <ul>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="tickets.html">Buy Tickets</a>
+                  </li>
+                  <li>
+                    <a href="support.html">Support</a>
+                  </li>
+                </ul>
+              </nav>
         </div>
-        <img src="./assets/img/logotricktreat.svg" alt="Trick or Treat" class="eventname">
+        <img src="./assets/img/logotricktreat.svg" alt="Trick or Treat">
     </header>
-    <container class="middle">
-        <div class="aparty">
-            <img src="./assets/img/jackghost.png" alt="Jack Pumpkin" class="jack">
-            <div class="party">
-                <p class="partytitle">the best <span>halloween</span> party!</p>
-                <div class="photos">
-                    <img src="./assets/img/party1.png" alt="Party1" class="thumb" href="">
-                    <img src="./assets/img/party2.png" alt="Party2" class="thumb" href="">
-                    <img src="./assets/img/party3.png" alt="Party3" class="thumb" href="">
+
+    <!-- ANIMAÇÃO FANTASMA JACK E FOTOS -->
+    <container id="middle">
+        <section class="party">
+            <div class="jack">
+                <img src="assets/img/jackghost.png" alt="Jack Pumpkin">
+            </div>
+            <div class="boxes">
+                <div class="box1">
+                    <p class="text1">the best</p>
+                    <p class="text2">halloween</p>
+                    <p class="text3">party ever!</p>
+                </div>
+                <div class="box2">
+                    <div class="boxphoto">
+                        <img src="assets/img/party1.png" alt="Party Photo 1">
+                        <img src="assets/img/party2.png" alt="Party Photo 2">
+                    </div>
+                    <!-- <div class="boxphoto2"> -->
+                        <img src="assets/img/party3.png" alt="Party Photo 3">
+                    <!-- </div> -->
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- TICKETS TO EACH -->
         <p class="ticktitle">Tickets</p>
@@ -49,6 +71,8 @@
         <img src="./assets/img/readyimg.svg" alt="Are you ready?!" class="ready">
         <img src="./assets/img/backgroundfooter.png" alt="Cemitério Zumbi" class="zumbi">
     </container>
+
+    <!-- LINKS DO RODAPÉ -->
     <footer class="final">
         <div class="extra">
             <p class="cname">hello hallow</p>

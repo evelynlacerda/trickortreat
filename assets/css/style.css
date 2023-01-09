@@ -1,0 +1,132 @@
+body {
+    background: url('../img/backgroundtop.png') no-repeat center top;
+    background-color: var(--primary-color);
+    background-size: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* INÍCIO COM LINKS E LOGO */
+#top {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0 50%;
+    gap: 10em;
+    max-width: 100%;
+    height: auto;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.up p {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    letter-spacing: 1px;
+    transition: text-shadow 1s;
+}
+
+.menu li:hover {
+    text-shadow: 0 0 5pt var(--active-color);
+}
+
+#top img {
+    width: 70%;
+}
+
+/* ANIMAÇÃO FANTASMA JACK E FOTOS */
+#middle {
+    display: flex;
+    flex-direction: column;
+    gap: 15em;
+}
+
+.party {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.jack {
+    max-width: 100%;
+    position: relative;
+    filter: drop-shadow(0px 0px 20px rgba(0, 5, 10, .75));
+    animation: jack 1s infinite;
+}
+
+@keyframes jack {
+    0% {top: 0px;}
+    50% {top: 10px;}
+    100% {top: 0px;}
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.box1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2pt;
+    gap: 10px;
+}
+
+.text1, .text3 {
+    font-size: 18pt;
+}
+
+.text1 {
+    text-align: start;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 35pt;
+}
+
+.text3 {
+    text-align: end;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.boxphoto {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.box2 img {
+    filter: drop-shadow(0px 0px 15px rgba(0, 5, 10, 0.75));
+    opacity: 50%;
+    transition-property: opacity, scale;
+    transition-duration: 1s;
+}
+
+.box2 img:hover {
+    opacity: 100%;
+    scale: 150%;
+}
+
