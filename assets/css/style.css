@@ -16,9 +16,9 @@ body {
 #top {
     display: flex;
     flex-direction: column;
-    margin: 5em auto 30em;
+    margin: 10em auto 30em;
     padding: 0 2em;
-    gap: 10em;
+    gap: 15em;
     max-width: 1024px;
 }
 
@@ -30,7 +30,8 @@ body {
 
 .up p {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 2em;
     letter-spacing: 2px;
 }
 
@@ -43,6 +44,7 @@ body {
     letter-spacing: 1px;
     font-weight: 300;
     transition: text-shadow 1s;
+    font-size: 2em;
 }
 
 .menu li:hover {
@@ -149,15 +151,23 @@ body {
     align-items: center;
 }
 
-.title_atractions {
+.title_atractions, .confirm_ticket {
     width: 100%;
     padding: 1em 0;
     background-color: var(--dark-color);
-    font-size: 1.5em;
-    font-weight: 500;
     text-align: center;
-    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.title_atractions {
+    font-weight: 600;
     letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.confirm_ticket {
+    font-weight: 300;
+    letter-spacing: .1em;
 }
 
 .cards_atractions {
@@ -180,10 +190,10 @@ body {
     background-color: var(--secondary-color);
     box-shadow: 0 0 1em rgba(0, 22, 43, .2), inset 0 0 .8em .2em rgba(0, 22, 43, .15);
     border-radius: var(--border-radius);
+    display: flex;
     width: 100%;
     padding: 1em;
-    display: flex;
-    gap: 2em;
+    margin: 0 1.5em;
     flex-grow: 1;
 }
 
@@ -211,6 +221,43 @@ body {
     letter-spacing: .2em;
 }
 
+.info_show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2em 2em 1.5em;
+}
+
+.singer {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.singer_1, .singer_2 {
+    font-size: 4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.singer_1 {
+    letter-spacing: .1em;
+    border-width: .05em 0 .05em .05em;
+    border-style: dashed;
+    border-color: var(--dark-color);
+    color: var(--primary-color);
+    padding: 0 .2em;
+}
+
+.singer_2 {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+    padding: 0 .5em;
+    letter-spacing: auto;
+}
+
+
 /* IMAGENS FOOTER */
 .imgfooter {
     display: flex;
@@ -229,7 +276,6 @@ body {
 .final {
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
     margin: auto;
     padding: 2em 0;
@@ -240,15 +286,25 @@ body {
 .footone {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
-    width: 100%; 
+    padding: 2em .5em 0;
+    width: 100%;
+    height: auto;
     max-width: 1024px;
     margin: auto;
+    font-size: 2em;
 }
 
 .footone p {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
+}
+
+.footerlinks li {
+    margin-bottom: .2em;
+}
+
+.footerlinks a {
+    font-weight: 300;
 }
 
 hr {
@@ -260,4 +316,6 @@ hr {
     max-width: 1024px;
     width: 100%;
     margin: auto;
+    font-size: 1.5em;
+    font-weight: 300;
 }
