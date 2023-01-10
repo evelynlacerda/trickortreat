@@ -1,24 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;700;800;900&display=swap');
+
+html {
+    font-size: 10px;
+}
+
 body {
     background: url('../img/backgroundtop.png') no-repeat center top;
     background-color: var(--primary-color);
     background-size: 100%;
-    max-width: 1024px;
-    margin: auto;
+    max-width: 2000px;
+    height: auto;
 }
 
 /* INÍCIO COM LINKS E LOGO */
 #top {
     display: flex;
     flex-direction: column;
-    margin: 10% 0 50%;
+    margin: 5em auto 30em;
+    padding: 0 2em;
     gap: 10em;
-    max-width: 100%;
-    height: auto;
+    max-width: 1024px;
 }
 
 .up {
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 
 .up p {
@@ -34,6 +41,7 @@ body {
 
 .menu li {
     letter-spacing: 1px;
+    font-weight: 300;
     transition: text-shadow 1s;
 }
 
@@ -49,14 +57,16 @@ body {
 #middle {
     display: flex;
     flex-direction: column;
-    gap: 15em;
+    gap: 10em;
 }
 
 .party {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5em;
+    max-width: 1024px;
+    margin: auto;
+    gap: 3em;
 }
 
 .jack {
@@ -75,7 +85,7 @@ body {
 .boxes {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
     align-items: center;
     width: 100%;
     height: auto;
@@ -86,11 +96,11 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2pt;
-    gap: 10px;
+    gap: 2em;
 }
 
 .text1, .text3 {
-    font-size: 18pt;
+    font-size: 3em;
 }
 
 .text1 {
@@ -99,7 +109,7 @@ body {
 
 .text2 {
     text-align: center;
-    font-size: 35pt;
+    font-size: 6em;
 }
 
 .text3 {
@@ -115,18 +125,139 @@ body {
 .boxphoto {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 4em;
 }
 
 .box2 img {
-    filter: drop-shadow(0px 0px 15px rgba(0, 5, 10, 0.75));
+    filter: drop-shadow(0px 0px 15px rgba(0, 5, 10, 0.75)) sepia(100);
     opacity: 50%;
-    transition-property: opacity, scale;
+    transition-property: opacity, scale, filter;
     transition-duration: 1s;
 }
 
 .box2 img:hover {
+    filter: sepia(0);
     opacity: 100%;
     scale: 150%;
+    z-index: 1;
 }
 
+/* AREA DOS SHOWS */
+.atractions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_atractions {
+    width: 100%;
+    padding: 1em 0;
+    background-color: var(--dark-color);
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.cards_atractions {
+    text-align: center;
+    width: 100%;
+    padding: 2em 0;
+    background-color: var(--secondary-color);
+}
+
+.card_box {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1024px;
+    width: 100%;
+    padding: 2em 0;
+    margin: auto;
+}
+
+.card_one, .card_two {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 1em rgba(0, 22, 43, .2), inset 0 0 .8em .2em rgba(0, 22, 43, .15);
+    border-radius: var(--border-radius);
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    gap: 2em;
+    flex-grow: 1;
+}
+
+.day, .singer, .local, .hour {
+    color: var(--primary-color);
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 0 0 2em 2em;
+}
+
+.day {
+    font-size: 8em;
+}
+
+.month {
+    background-color: var(--dark-color);
+    padding: .5em;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: .2em;
+}
+
+/* IMAGENS FOOTER */
+.imgfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 2000px;
+    gap: 5em;
+}
+
+.ready {
+    display: flex;
+    justify-content: center;
+}
+
+/* LINKS DO RODAPÉ */
+.final {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 2em 0;
+    gap: 2em;
+    background-color: #000;
+}
+
+.footone {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%; 
+    max-width: 1024px;
+    margin: auto;
+}
+
+.footone p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+hr {
+    border-color: var(--primary-color);
+}
+
+.foottwo {
+    text-align: end;
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
