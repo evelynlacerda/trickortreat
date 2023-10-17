@@ -1,0 +1,32 @@
+@use 'variables'
+@use 'mixins'
+
+body
+    width: 100%
+    max-width: 95%
+    height: auto
+    @include mixins.flex-center
+    flex-direction: column
+    background: url('../img/backgroundtop.png') no-repeat center top
+    background-color: variables.$background
+    background-size: 100%
+
+#header
+    width: 1024px
+    max-width: 95%
+    display: flex
+    flex-direction: column
+    gap: 8rem
+    margin: 4rem 0 0
+
+    .menu
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+        p
+            font-size: variables.$font-desktop
+            color: variables.$primary
+            font-weight: 600
+            text-transform: uppercase
+            letter-spacing: 0.2rem
