@@ -1,0 +1,13 @@
+body {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  background: #00162B url("../img/backgroundtop.png") no-repeat center top;
+  background-size: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

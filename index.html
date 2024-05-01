@@ -7,19 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trick or Treat Festival</title>
 
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- INÍCIO COM LINKS E LOGO -->
-    <header id="top">
-        <div class="up">
+    <header id="header">
+        <div class="menu">
             <p>hello hallow</p>
-            <nav class="menu">
+            <nav class="menu-links">
                 <ul>
                     <li>
                         <a href="about.html">About</a>
@@ -33,14 +36,13 @@
                 </ul>
             </nav>
         </div>
-        <img src="./assets/img/logotricktreat.svg" alt="Trick or Treat">
+        <img src="./src/img/logotricktreat.svg" alt="Trick or Treat">
     </header>
 
-    <!-- ANIMAÇÃO FANTASMA JACK E FOTOS -->
-    <container id="middle">
+    <main id="main">
         <section class="party">
             <div class="jack">
-                <img src="assets/img/jackghost.png" alt="Jack Pumpkin">
+                <img src="src/img/jackghost.png" alt="Jack Pumpkin">
             </div>
             <div class="boxes">
                 <div class="box1">
@@ -50,10 +52,10 @@
                 </div>
                 <div class="box2">
                     <div class="boxphoto">
-                        <img src="assets/img/party1.png" alt="Party Photo 1">
-                        <img src="assets/img/party2.png" alt="Party Photo 2">
+                        <img src="src/img/party1.png" alt="Party Photo 1">
+                        <img src="src/img/party2.png" alt="Party Photo 2">
                     </div>
-                    <img src="assets/img/party3.png" alt="Party Photo 3">
+                    <img src="src/img/party3.png" alt="Party Photo 3">
                 </div>
             </div>
         </section>
@@ -74,9 +76,9 @@
                                 <p class="singer_1">jonas</p>
                                 <p class="singer_2">blue</p>
                             </div>
-                            <p class="local"><img src="assets/icon/location.svg" alt="Local Icon" width="15em"> 690 5th
+                            <p class="local"><img src="src/icon/location.svg" alt="Local Icon" width="15em"> 690 5th
                                 Ave, New York, NY 10028, EUA.</p>
-                            <p class="hour"><img src="assets/icon/hour.svg" alt="Hour Icon" width="15em"> Start -
+                            <p class="hour"><img src="src/icon/hour.svg" alt="Hour Icon" width="15em"> Start -
                                 01:00am | End - 05:00am</p>
                         </div>
                     </div>
@@ -91,9 +93,9 @@
                                 <p class="singer_1">alan</p>
                                 <p class="singer_2">walker</p>
                             </div>
-                            <p class="local"><img src="assets/icon/location.svg" alt="Local Icon" width="15em"> 690 5th
+                            <p class="local"><img src="src/icon/location.svg" alt="Local Icon" width="15em"> 690 5th
                                 Ave, New York, NY 10028, EUA.</p>
-                            <p class="hour"><img src="assets/icon/hour.svg" alt="Hour Icon" width="15em"> Start -
+                            <p class="hour"><img src="src/icon/hour.svg" alt="Hour Icon" width="15em"> Start -
                                 01:00am | End - 05:00am</p>
                         </div>
                     </div>
@@ -103,18 +105,15 @@
             <p class="confirm_ticket">Have a ticket? Confirm here!</p>
         </section>
 
-        <!-- IMAGENS FOOTER -->
         <section class="imgfooter">
             <div class="ready">
-                <img src="./assets/img/readyimg.svg" alt="Are you ready?!">
+                <img src="./src/img/readyimg.svg" alt="Are you ready?!">
             </div>
-            <img src="./assets/img/backgroundfooter.png" alt="Cemitério Zumbi">
         </section>
-    </container>
+    </main>
 
-    <!-- LINKS DO RODAPÉ -->
     <footer class="footer">
-
+        <img src="./src/img/backgroundfooter.png" alt="Cemitério Zumbi">
         <div id="footer_content">
             <div class="footer_links">
                 <p class="namelist">
@@ -153,10 +152,10 @@
                         Social Networks
                     </p>
                     <div class="socialicons">
-                        <a href=""><img src="assets/icon/instagram.svg" alt="instagram"></a>
-                        <a href=""><img src="assets/icon/facebook.svg" alt="Facebook"></a>
-                        <a href=""><img src="assets/icon/tiktok.svg" alt="tiktok"></a>
-                        <a href=""><img src="assets/icon/twitter.svg" alt="Twitter"></a>
+                        <a href=""><img src="src/icon/instagram.svg" alt="instagram"></a>
+                        <a href=""><img src="src/icon/facebook.svg" alt="Facebook"></a>
+                        <a href=""><img src="src/icon/tiktok.svg" alt="tiktok"></a>
+                        <a href=""><img src="src/icon/twitter.svg" alt="Twitter"></a>
                     </div>
                 </div>
             </div>
@@ -174,7 +173,8 @@
 
         <hr>
 
-            <p class="footer_copy">Copyright © Hello Hallow, 2023. All rights reserved.</p>
+        <p class="footer_copy">Copyright © Hello Hallow, 2023. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

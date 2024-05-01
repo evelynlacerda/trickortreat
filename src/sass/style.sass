@@ -1,0 +1,11 @@
+@use 'variables'
+@use 'mixins'
+
+body
+    width: 100vw
+    height: auto
+    @include mixins.flex-center
+    flex-direction: column
+    background: variables.$background url('../img/backgroundtop.png') no-repeat center top
+    background-size: 100%
+
